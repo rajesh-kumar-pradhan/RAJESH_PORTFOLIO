@@ -5,13 +5,10 @@
   "type": "module",
   "description": "Rajesh Kumar Pradhan \u2014 personal developer portfolio",
   "scripts": {
-    "dev": "vite --open",
-    "build": "tsc --noEmit && vite build",
+    "dev": "vite",
+    "build": "vite build",
     "preview": "vite preview --open",
     "typecheck": "tsc --noEmit"
-  },
-  "engines": {
-    "node": ">=22.13.0"
   },
   "dependencies": {
     "react": "19.2.6",
