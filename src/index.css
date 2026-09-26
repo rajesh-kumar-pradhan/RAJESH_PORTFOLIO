@@ -920,30 +920,36 @@ h2 {
   margin-top: 1px;
 }
 .task-window {
-  width: 94%;
-  display: flex;
-  min-width: 335px;
-  margin-left: 11%;
-  border-radius: 10px;
-  border: 1px solid #575e5d;
-  background: #141b1b;
-  color: #e6eeec;
-  box-shadow: 10px 23px 40px #00100fc4;
-  transform: rotate(5deg);
-  overflow: hidden;
+  width: 94%;                 /* Width relative to its parent */
+  display: flex;              /* Places sidebar and content side by side */
+  min-width: 335px;           /* Prevents it becoming narrower than 335px */
+  margin-left: 11%;           /* Moves the preview away from the left edge */
+  border-radius: 10px;        /* Rounds the corners */
+
+  border: 1px solid #d7e1da !important; /* Light outline */
+  background: #ffffff !important;      /* White background */
+  color: #26312c !important;           /* Default dark text */
+
+  box-shadow: 10px 23px 40px #00100fc4; /* Shadow behind the preview */
+  transform: rotate(5deg);             /* Tilts the preview clockwise */
+  overflow: hidden;                    /* Clips content at its edges */
 }
+
 .mini-sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 49px;
-  flex-shrink: 0;
-  background: #1c2423;
-  padding-block: 14px;
-  color: #8a9b97;
-  border-right: 1px solid #39433e;
+  display: flex;             /* Enables flexible layout */
+  flex-direction: column;    /* Places icons vertically */
+  align-items: center;       /* Centers icons horizontally */
+  gap: 20px;                 /* Space between icons */
+  width: 49px;               /* Sidebar width */
+  flex-shrink: 0;            /* Prevents the sidebar from shrinking */
+
+  background: #f0f4ef !important; /* Light sidebar background */
+  padding-block: 14px;           /* Space inside the top and bottom */
+  color: #617569 !important;     /* Default icon colour */
+
+  border-right: 1px solid #dbe4dc !important; /* Light dividing line */
 }
+
 .app-icon {
   color: #c8eacb;
 }

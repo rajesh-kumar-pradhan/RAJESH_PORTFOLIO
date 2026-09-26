@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Rajesh Kumar Pradhan \u2014 personal developer portfolio",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --open",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview --open",
     "typecheck": "tsc --noEmit"
   },
